@@ -32,7 +32,7 @@ public class MueckenfangActivity extends AppCompatActivity implements View.OnCli
 
     private void starteRunde() {
         runde = runde + 1;
-        muecken = muecken + 1;
+        muecken = muecken * 10;
         gefangeneMuecken = 0;
         zeit = 60;
         bildschirmAktualisieren();
