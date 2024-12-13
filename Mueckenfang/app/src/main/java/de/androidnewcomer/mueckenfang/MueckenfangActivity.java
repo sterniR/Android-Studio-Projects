@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -36,5 +38,20 @@ public class MueckenfangActivity extends AppCompatActivity implements View.OnCli
         gefangeneMuecken = 0;
         zeit = 60;
         bildschirmAktualisieren();
+    }
+
+    private void bildschirmAktualisieren() {
+        TextView tvPunkte = findViewById(R.id.points);
+        tvPunkte.setText(Integer.toString(punkte));
+        TextView tvround = findViewById(R.id.round);
+        tvround.setText(Integer.toString(runde));
+
+        TextView tvTreffer = findViewById(R.id.hits);
+        tvTreffer.setText(Integer.toString(gefangeneMuecken));
+        TextView tvZeit = findViewById(R.id.time);
+        tvZeit.setText(Integer.toString(zeit));
+
+        FrameLayout flTreffer = findViewById(R.id.bar_hits);
+        FrameLayout flZeit = findViewById(R.id.bar_timer);
     }
 }
