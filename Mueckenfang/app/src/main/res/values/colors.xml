@@ -6,4 +6,6 @@
     <color name="round">#000000</color>
     <color name="hits">#8BC34A</color>
     <color name="time">#E91E63</color>
+    <color name="background">#A8B6FF</color>
+    <color name="game_over">#FF1200</color>
 </resources>
